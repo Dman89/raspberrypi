@@ -9,18 +9,29 @@ led.red = 0.5  # half red
 sleep(1)
 
 led.color = (0, 1, 0)  # full green
-sleep(1)
+sleep(1.5)
 led.color = (1, 0, 1)  # magenta
-sleep(1)
+sleep(1.5)
 led.color = (1, 1, 0)  # yellow
-sleep(1)
+sleep(1.5)
 led.color = (0, 1, 1)  # cyan
-sleep(1)
+sleep(1.5)
 led.color = (1, 1, 1)  # white
-sleep(1)
+sleep(1.5)
 
 led.color = (0, 0, 0)  # off
-sleep(1)
+sleep(0.1)
+led.color = (0, 1, 0)  # full green
+sleep(0.1)
+led.color = (0, 0, 0)  # off
+sleep(0.1)
+led.color = (0, 1, 0)  # full green
+sleep(0.1)
+led.color = (0, 0, 0)  # off
+sleep(0.1)
+led.color = (0, 1, 0)  # full green
+sleep(0.1)
+sleep(1.5)
 
 # slowly increase intensity of blue
 for n in range(100):
