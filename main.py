@@ -1,5 +1,5 @@
 import board
-import adafruit_rgbled
+# import adafruit_rgbled
 import time
 
 dir(board)
