@@ -1,10 +1,9 @@
 from gpiozero import RGBLED
 from time import sleep
 import Adafruit_DHT
-import time
 
 # Configure
-DHT_PIN = 4
+DHT_PIN = 23
 RGBLED_RED = 17
 RGBLED_GREEN = 27
 RGBLED_BLUE = 22
@@ -45,4 +44,4 @@ while True:
             led.color = (0, 1, 0)
     else:
         print("Sensor failure. Check wiring.");
-    time.sleep(3);
+    sleep(3);
