@@ -2,12 +2,14 @@ from gpiozero import RGBLED
 from time import sleep
 import Adafruit_DHT
 import time
- 
-DHT_SENSOR = Adafruit_DHT.DHT11
+
+# Configure
 DHT_PIN = 4
 RGBLED = { "red": 17, "green": 27, "blue": 22 }
-print(RGBLED)
-led = RGBLED(RGBLED["red"], RGBLED.green, RGBLED[2].blue)
+
+ 
+DHT_SENSOR = Adafruit_DHT.DHT11
+led = RGBLED(RGBLED["red"], RGBLED["green"], RGBLED[2]["blue"])
 
 led.red = 1  # full red
 sleep(1)
