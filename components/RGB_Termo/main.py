@@ -18,6 +18,7 @@ led.color = (0, 1, 0)
 sleep(0.5)
 led.color = (0, 0, 1)
 sleep(0.5)
+led.color = (0, 0, 0)
 
 # led.color = (0, 1, 0)  # full green
 # sleep(1.5)
