@@ -3,9 +3,9 @@ from time import sleep
 import Adafruit_DHT
 
 # Configure
-DHT_PIN = 23
-RGBLED_RED = 17
-RGBLED_GREEN = 27
+DHT_PIN = 4
+RGBLED_RED = 27
+RGBLED_GREEN = 17
 RGBLED_BLUE = 22
 
  
