@@ -9,7 +9,7 @@ RGBLED = { "red": 17, "green": 27, "blue": 22 }
 
  
 DHT_SENSOR = Adafruit_DHT.DHT11
-led = RGBLED(RGBLED["red"], RGBLED["green"], RGBLED["blue"])
+led = RGBLED(red = RGBLED["red"], green = RGBLED["green"], blue = RGBLED["blue"])
 
 led.red = 1  # full red
 sleep(1)
