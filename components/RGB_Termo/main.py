@@ -35,6 +35,7 @@ RGBLED_BLUE = 22
  
 while True:
     humidity, temperature = Adafruit_DHT.read(DHT_SENSOR, DHT_PIN)
+    print(temperature)
     if humidity is not None and temperature is not None:
         faren = (temperature * (9/5)) + 32;
         print("Temp={0:0.1f}F ({1:0.1f}C) Humidity={2:0.1f}%".format(faren, temperature, humidity))
