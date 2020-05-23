@@ -1,17 +1,29 @@
-import board
-# import adafruit_rgbled
-import time
+from gpiozero import RGBLED
+from time import sleep
+from __future__ import division  # required for python 2
 
-dir(board)
+led = RGBLED(red=9, green=10, blue=11)
 
-# RED_LED = 17
-# GREEN_LED = 27
-# BLUE_LED = 22
+led.red = 1  # full red
+sleep(1)
+led.red = 0.5  # half red
+sleep(1)
 
-# # Create a RGB LED object
-# led = adafruit_rgbled.RGBLED(RED_LED, BLUE_LED, GREEN_LED)
-# led.color = (255, 0, 0)
-# time.sleep(3);
-# led.color = (0, 255, 0)
-# time.sleep(3);
-# led.color = (0, 0, 255)
+led.color = (0, 1, 0)  # full green
+sleep(1)
+led.color = (1, 0, 1)  # magenta
+sleep(1)
+led.color = (1, 1, 0)  # yellow
+sleep(1)
+led.color = (0, 1, 1)  # cyan
+sleep(1)
+led.color = (1, 1, 1)  # white
+sleep(1)
+
+led.color = (0, 0, 0)  # off
+sleep(1)
+
+# slowly increase intensity of blue
+for n in range(100):
+    led.blue = n/100
+    sleep(0.1)
