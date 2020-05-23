@@ -31,7 +31,8 @@ led.color = (0, 0, 0)  # off
 sleep(0.1)
 led.color = (0, 1, 0)  # full green
 sleep(0.1)
-sleep(1.5)
+led.color = (0, 0, 0)  # off
+sleep(1)
 
 # slowly increase intensity of blue
 for n in range(100):
