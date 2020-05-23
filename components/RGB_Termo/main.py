@@ -5,11 +5,13 @@ import time
 
 # Configure
 DHT_PIN = 4
-RGBLED = { "red": 17, "green": 27, "blue": 22 }
+RGBLED_RED = 17
+RGBLED_GREEN = 27
+RGBLED_BLUE = 22
 
  
 DHT_SENSOR = Adafruit_DHT.DHT11
-led = RGBLED(red = RGBLED["red"], green = RGBLED["green"], blue = RGBLED["blue"])
+led = RGBLED(red = RGBLED_RED, green = RGBLED_GREEN, blue = RGBLED_BLUE)
 
 led.red = 1  # full red
 sleep(1)
