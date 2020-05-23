@@ -4,8 +4,8 @@ import Adafruit_DHT
 
 # Configure
 DHT_PIN = 4
-RGBLED_RED = 27
-RGBLED_GREEN = 17
+RGBLED_RED = 17
+RGBLED_GREEN = 27
 RGBLED_BLUE = 22
 
  
